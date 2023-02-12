@@ -44,7 +44,6 @@ strong:hover {
     align-items: center;
     width: 100%;
     margin-bottom: 1.5rem;
-    /*background-color: blanchedalmond;*/
 }
 
 #unread-counter {
@@ -106,12 +105,14 @@ strong:hover {
     opacity: 70%;
 }
 
+/*Need to re-do as a psuedo element. But will leave off for now.
 .tiny-red-dot {
     width: 0.5rem;
     height: 0.5rem;
     border-radius: 50%;
     background-color: crimson;
 }
+*/
 
 .time-elapsed {
     width: 100%;
