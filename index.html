@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Notifications page by CJ Cameron</title>
+
+</head>
+<body>
+<div class="main-container">
+  <div class="notifications-header">
+    <h1>Notifications</h1>
+    <div id="unread-counter">
+    </div>
+    <p id="mark-all">Mark all as read</p>
+  </div>
+  <div class="notifications-container">
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-mark-webber.webp" alt="Mark Webber Profile Photo">
+      <!--'Content' was late addition to seperate notification script and time elapsed from profile photo-->
+      <div class="content">
+      <p class="notification-script"><strong>Mark Webber</strong> reacted to your recent post <strong>My first tournament today!</strong></p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">1m ago</p>
+    </div>
+    </div>
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-angela-gray.webp" alt="Angela Gray Profile Photo">
+      <div class="content">
+      <p class="notification-script"><strong>Angela Gray</strong> followed you</p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">5m ago</p>
+    </div>
+    </div>
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-jacob-thompson.webp" alt="Jacob Thompson Profile Photo">
+      <div class="content">
+      <p class="notification-script"><strong>Jacob Thompson</strong> has joined your group <strong>Chess Club</strong></p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">1 day ago</p>
+    </div>
+    </div>
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky Hasnuddin Profile Photo">
+      <div class="content">
+      <p class="notification-script"><strong>Rizky Hasanuddin</strong> sent you a private message</p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">5 days ago</p>
+    </div>
+      <div id="private-message">
+        Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+       I'm already having lots of fun and improving my game.
+      </div>
+    </div>
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-kimberly-smith.webp" alt="Kimberly SMith Profile Photo">
+      <div class="content" id="kim-content">
+      <p class="notification-script"><strong>Kimberly Smith</strong> commented on your picture</p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">1 week ago</p>
+    </div>
+      <img class="commented-photo" src="/assets/images/image-chess.webp" alt="girl playing chess">
+    </div>
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-nathan-peterson.webp" alt="Nathan Peterson Profile Photo">
+      <div class="content">
+      <p class="notification-script"><strong>Nathan Peterson</strong> reacted to your recent post <strong>5 end-game strategies to increase your win rate</strong></p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">2 weeks ago</p>
+    </div>
+    </div>
+    <div class="notification unread">
+      <img class="profile-photo" src="/assets/images/avatar-anna-kim.webp" alt="Anna Kim Profile Photo">
+      <div class="content">
+      <p class="notification-script"><strong>Anna Kim</strong> left the group <strong>Chess Club</strong></p>
+      <div class="tiny-red-dot"></div>
+      <p class="time-elapsed">2 weeks ago</p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script src="/main.js"></script>
+  
+</body>
+</html>

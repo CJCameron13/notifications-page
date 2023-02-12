@@ -1,0 +1,172 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --very-light-grayish-blue: hsl(210, 60%, 98%);
+    --light-grayish-blue-1: hsl(211, 68%, 94%);
+    --light-grayish-blue-2: hsl(205, 33%, 90%);
+    --grayish-blue: hsl(219, 14%, 63%);
+    --dark-grayish-blue: hsl(219, 12%, 42%);
+    --very-dark-blue: hsl(224, 21%, 14%);
+    --dark-blue: hsl(214, 67%, 33%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Plus Jakarta Sans';
+}
+
+body {
+    background: var(--light-grayish-blue-1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    background: var(--white);
+    padding: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 900px;
+    border-radius: 2%;
+
+}
+
+strong:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.notifications-header {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    /*background-color: blanchedalmond;*/
+}
+
+#unread-counter {
+    background: var(--dark-blue);
+    color: var(--white);
+    font-weight: 800;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20%;
+}
+
+#mark-all {
+    margin-left: auto;
+}
+
+#mark-all:hover {
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.notification {
+    width: 100%;
+    background-color: inherit;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.unread:hover {
+    cursor: pointer;
+}
+
+.unread {
+    background-color: var(--light-grayish-blue-1);
+}
+
+.profile-photo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 1rem;
+    
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.notification-script {
+    opacity: 70%;
+}
+
+.tiny-red-dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: crimson;
+}
+
+.time-elapsed {
+    width: 100%;
+}
+
+#private-message {
+    border-width: 2px;
+    border-color: var(--grayish-blue);
+    border-style: solid;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+
+.commented-photo {
+    height: 3rem;
+    width: 3rem;
+    margin-left: auto;
+}
+
+@media only screen and (max-width:400px) {
+    .main-container {
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    .profile-photo {
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+
+    .tiny-red-dot {
+        display: none;
+    }
+
+    #private-message {
+        font-size: 0.8rem;
+    }
+
+    .commented-photo {
+        position: absolute;
+        right: 10%;
+        height: 2.2rem;
+        width: 2.2rem;
+    }
+
+    #kim-content {
+        width: 60%;
+    }
+}
